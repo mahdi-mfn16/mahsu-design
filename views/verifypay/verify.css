@@ -1,0 +1,362 @@
+#main {
+
+    max-width: 1100px;
+    margin: 30px auto 60px auto;
+    position: relative;
+    z-index: 0;
+}
+
+
+.nav-buy {
+    max-width: 1100px;
+    height: 120px;
+    margin: 8px auto 0 auto;
+    box-shadow: 0 0 2px #aaa;
+    position: relative;
+    background: #fff;
+    top: 0;
+    display: block;
+    z-index: 1;
+}
+
+.progress-nav {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+.order-icon{
+    height: 50%;
+    position: relative;
+}
+.order-icon span{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    right: 50%;
+    margin-right: -25px;
+    top: 25px;
+    background: url(../../public/images/profile.PNG) no-repeat center;
+
+}
+
+.order-text{
+    height: 50%;
+    font-size: 11pt;
+
+}
+.order-text p{
+    margin-top: 20px;
+}
+
+.cart-detail {
+    width: 100%;
+    background: #fff;
+    float: right;
+
+}
+
+.cart-detail > table {
+    float: right;
+    width: 96%;
+    margin: 20px 2%;
+    box-shadow: 0 0 3px #aaa;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cart-detail ul {
+    margin: 20px 10%;
+    padding: 0;
+    width: 80%;
+    float: right;
+}
+
+.cart-detail ul li {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    float: right;
+    position: relative;
+}
+
+.cart-detail ul li label {
+    width: 47%;
+    height: 40px;
+    margin: 5px 1%;
+    float: right;
+    padding-right: 1%;
+    line-height: 35px;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.cart-detail ul li p {
+    width: 47%;
+    height: 40px;
+    margin: 5px 1%;
+    border-radius: 5px;
+    float: right;
+    padding-right: 1%;
+    line-height: 35px;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+}
+.cart-detail > table img {
+    width: 80%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.cart-detail > table .row1 {
+    width: 100%;
+    height: 35px;
+    font-size: 8pt;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.cart-detail > table .row2 td {
+    border-bottom: 1px dashed #ccc;
+}
+
+.cart-detail > table .row2:last-child td {
+    border-bottom: none;
+}
+
+.cart-detail > table .row2 {
+    width: 100%;
+    /*height: 80px;*/
+    font-weight: bolder;
+    font-size: 9pt;
+}
+
+.cart-detail > table .col1 {
+    width: 15%;
+}
+
+.cart-detail > table .col2 {
+    width: 20%;
+}
+
+.cart-detail > table .col3 {
+    width: 25%;
+}
+
+.cart-detail > table .col4 {
+    width: 10%;
+}
+
+.cart-detail > table .col5 {
+    width: 10%;
+}
+
+.cart-detail > table .col6 {
+    width: 20%;
+}
+
+.cart-detail h3 {
+    text-align: center;
+    font-size: 10.5pt;
+    margin-top: 20px;
+}
+
+
+
+
+
+/*-------------------------------------------------------------*/
+@media screen and (max-width: 1100px) {
+    .nav-buy {
+        width: 98%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .nav-buy {
+        margin: 8px auto 0 auto;
+        top: -42px;
+    }
+    .progress-nav{
+        margin-top: 54px;
+    }
+
+    #main {
+        margin: 0 auto 60px auto;
+        top: -40px;
+    }
+
+
+    .cart-detail ul {
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+        float: right;
+    }
+
+    .cart-detail ul li label {
+
+        line-height: 40px;
+        width: 35%;
+
+    }
+
+    .cart-detail ul li p {
+        line-height: 40px;
+        width: 59%;
+    }
+
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .progress-nav{
+        width: 95%;
+    }
+    .cart-detail ul li button {
+        width: 12%;
+
+    }
+
+    .cart-detail ul li label {
+
+        line-height: 40px;
+        width: 35%;
+        font-size: 8pt;
+
+    }
+
+    .cart-detail ul li p {
+        line-height: 40px;
+        width: 59%;
+        font-size: 8pt;
+    }
+
+
+}
+
+@media screen and (max-width: 580px) {
+
+
+    .cart-detail ul li label {
+
+        line-height: 40px;
+        width: 30%;
+        font-size: 7pt;
+
+    }
+
+    .cart-detail ul li p {
+        line-height: 40px;
+        width: 64%;
+        font-size: 7pt;
+    }
+
+    .cart-detail > table img {
+        width: 90%;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    .cart-detail > table .row1 {
+        width: 100%;
+        /*height: 35px;*/
+        font-size: 7.5pt;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .cart-detail > table .row2 {
+        width: 100%;
+
+        font-size: 8pt;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .cart-detail ul li label {
+
+        line-height: 40px;
+        width: 26%;
+        font-size: 7pt;
+
+    }
+
+    .cart-detail ul li p {
+        line-height: 40px;
+        width: 64%;
+        font-size: 7pt;
+    }
+
+
+    .cart-detail > table .row1 {
+        width: 100%;
+        font-size: 7pt;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .cart-detail > table .row2 {
+        width: 100%;
+
+        font-size: 7pt;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .tab-details ul li button {
+        font-size: 7pt;
+
+    }
+
+    .tab-details ul li label {
+        font-size: 7pt;
+
+    }
+
+    .tab-details ul li p {
+
+        font-size: 7pt;
+    }
+
+    .tab-details ul li input {
+
+        font-size: 7pt;
+    }
+}
+
+
+
+@media screen and (max-width: 360px){
+
+    .cart-detail ul li label {
+        font-size: 6pt;
+    }
+
+    .cart-detail ul li p {
+        line-height: 40px;
+        font-size: 6pt;
+    }
+
+    .cart-detail > table .row1 {
+        font-size: 6pt;
+
+    }
+
+    .cart-detail > table .row2 {
+
+        font-size: 6pt;
+    }
+
+
+}

@@ -1,0 +1,1243 @@
+#main {
+
+    max-width: 1100px;
+    margin: 30px auto 60px auto;
+    position: relative;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 14pt;
+    margin-bottom: 40px;
+}
+
+.main-content {
+    width: 100%;
+    float: left;
+}
+
+.profile-tab {
+    width: 100%;
+}
+
+.profile-tab > ul {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    /*height: 100px;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    float: right;
+    box-shadow: 0 0 2px #aaa;
+    background: #fff;
+
+}
+
+.profile-tab > ul li {
+    margin: 30px 1%;
+    width: 20%;
+    height: 40px;
+    float: right;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px #ccc;
+    font-size: 9pt;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.03);
+    color: rgba(0, 0, 0, 0.8);
+
+}
+
+.profile-tab > ul li:first-child {
+    margin: 10px 2%;
+    width: 32%;
+    height: 80px;
+    float: right;
+    border: none;
+    box-shadow: 0 0 3px #aaa;
+    font-size: 9pt;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: default;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.profile-tab > ul li:first-child .profile-logo {
+    width: 20%;
+    float: right;
+    height: 100%;
+    position: relative;
+
+}
+
+.profile-tab > ul li:first-child .profile-logout {
+    position: relative;
+    width: 19.5%;
+    float: left;
+    height: 100%;
+    box-shadow: 1px 0 1px #ccc;
+    cursor: pointer;
+}
+
+.profile-tab > ul li:first-child .profile-name {
+    width: 60%;
+    float: right;
+    height: 70%;
+    margin-top: 10px;
+
+}
+
+.profile-tab > ul li:first-child .profile-logo span {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin: -15px -15px 0 auto;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../../public/images/profile.PNG) no-repeat center;
+
+}
+
+.profile-tab > ul li:first-child .profile-logout span {
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    margin: -15px -15px 0 auto;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../../public/images/exit.PNG) no-repeat center;
+
+}
+
+.profile-tab > ul li:first-child .profile-name p {
+    width: 95%;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 5% 0 0;
+    float: right;
+    font-size: 8pt;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.profile-tab > ul li:first-child .profile-name p:first-child {
+    font-size: 10pt !important;
+    font-weight: bolder;
+    color: #000;
+}
+
+.profile-tab > ul li:first-child .profile-logout a {
+    display: block;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 58%;
+    line-height: 18px;
+}
+
+.contain-content {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #aaa;
+    float: right;
+}
+
+.tab-details {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.tab-details ul {
+    margin: 20px 10%;
+    padding: 0;
+    width: 80%;
+    float: right;
+}
+
+.tab-details ul li {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    float: right;
+    position: relative;
+}
+
+.tab-details ul li label {
+    width: 47%;
+    height: 40px;
+    margin: 5px 1%;
+    float: right;
+    padding-right: 1%;
+    line-height: 35px;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.tab-details ul li p {
+    width: 47%;
+    height: 40px;
+    margin: 5px 1%;
+    border-radius: 5px;
+    float: right;
+    padding-right: 1%;
+    line-height: 35px;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+}
+
+.tab-details ul li input {
+    width: 46%;
+    height: 36px;
+    margin: 5px 1%;
+    border-radius: 5px;
+    float: right;
+    padding-right: 1%;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.8);
+    display: none;
+    border: 1px solid #aaa;
+
+}
+
+.tab-details ul li button {
+    width: 8%;
+    height: 26px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.68);
+    color: #fff;
+    border: none;
+    font-size: 9pt;
+}
+
+.tab-details button {
+    cursor: pointer;
+}
+
+.tab-details ul li .verify-text {
+    display: none;
+}
+
+.tab-details ul li .edit-text {
+    display: block;
+}
+
+.activetab {
+    transform: scale(1.05);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6) !important;
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0.001) !important;
+}
+
+@media screen and (max-width: 1100px) {
+    .main-content {
+        width: 98%;
+        margin-left: 1%;
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    #main {
+        margin: 0 auto 60px auto;
+        top: -40px;
+    }
+
+    .profile-tab > ul li {
+        height: 40px;
+        font-size: 9pt;
+
+    }
+
+    .profile-tab > ul li:first-child {
+        margin: 10px 2%;
+        height: 80px;
+        font-size: 9pt;
+
+    }
+
+    .tab-details ul {
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .profile-tab > ul li:first-child .profile-logo span {
+
+        margin: -12px -12px 0 auto;
+        width: 24px;
+        height: 24px;
+
+    }
+
+    .profile-tab > ul li:first-child .profile-logout span {
+        top: 35%;
+        right: 50%;
+        margin: -12px -12px 0 auto;
+        width: 24px;
+        height: 24px;
+
+    }
+
+    .profile-tab > ul li {
+        width: 20%;
+        height: 40px;
+        font-size: 8pt;
+
+    }
+
+    .profile-tab > ul li:first-child {
+        margin: 10px 2%;
+        /*width: 35%;*/
+        height: 80px;
+        font-size: 8pt;
+
+    }
+
+    .tab-details ul li button {
+        width: 12%;
+
+    }
+
+    .tab-details ul li label {
+
+        line-height: 40px;
+        width: 35%;
+
+    }
+
+    .tab-details ul li p {
+        line-height: 40px;
+        width: 59%;
+    }
+
+    .tab-details ul li input {
+        line-height: 40px;
+        width: 58%;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .profile-tab > ul {
+        display: block;
+        padding-right: 2%;
+        width: 97.5%;
+
+    }
+
+    .profile-tab > ul li {
+        width: 30.7%;
+        height: 40px;
+        font-size: 7.5pt;
+
+    }
+
+    .profile-tab > ul li:first-child {
+        margin: 10px 16%;
+        width: 68%;
+        height: 80px;
+        font-size: 7.5pt;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .tab-details ul li button {
+        font-size: 8pt;
+        width: 15%;
+        left: 10px;
+
+    }
+
+    .tab-details ul li label {
+
+        line-height: 40px;
+        font-size: 8pt;
+        width: 30%;
+
+    }
+
+    .tab-details ul li p {
+        line-height: 40px;
+        width: 64%;
+        font-size: 8pt;
+    }
+
+    .tab-details ul li input {
+        line-height: 40px;
+        width: 62.5%;
+        font-size: 8pt;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .tab-details ul li button {
+        font-size: 7pt;
+
+    }
+
+    .tab-details ul li label {
+        font-size: 7pt;
+
+    }
+
+    .tab-details ul li p {
+
+        font-size: 7pt;
+    }
+
+    .tab-details ul li input {
+
+        font-size: 7pt;
+    }
+}
+
+
+/*-------------------------------------------------------------*/
+
+
+.black-btn {
+    width: 80%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 0 2px #aaa;
+    cursor: pointer;
+    font-size: 9pt;
+    float: right;
+    margin-right: 10%;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.black-btn:hover {
+    border: 1px solid #aaa;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 2px #aaa;
+}
+
+.tab-details .old-address {
+    width: 100%;
+    float: right;
+    margin: 30px 0;
+}
+
+.tab-details .old-address .address-item {
+    width: 100%;
+    float: right;
+    box-shadow: 0 0 3px #aaa;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    height: 120px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.tab-details .old-address .address-item:hover {
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+
+}
+
+/*.tab-details .old-address .address-item .item-select {*/
+/*width: 4.8%;*/
+/*height: 100%;*/
+/*float: right;*/
+/*background: #fff;*/
+/*box-shadow: -1px 0 1px #ccc;*/
+
+/*}*/
+
+/*.tab-details .old-address .address-item .item-select span {*/
+/*margin: -7px auto 0 auto;*/
+/*display: block;*/
+/*width: 14px;*/
+/*height: 14px;*/
+/*border-radius: 50%;*/
+/*border: 1px solid #000;*/
+/*position: relative;*/
+/*top: 50%;*/
+/*}*/
+
+.tab-details .old-address .address-item .detail-address {
+    width: 95%;
+    float: right;
+    height: 100%;
+}
+
+.tab-details .old-address .address-item .detail-address table {
+    width: 98%;
+    float: right;
+    height: 95%;
+    margin-right: 2%;
+
+}
+
+.tab-details .old-address .address-item .detail-address table .label {
+    width: 15%;
+    font-size: 9pt;
+    text-align: right;
+    font-weight: 500;
+}
+
+.tab-details .old-address .address-item .detail-address table .value {
+    width: 18%;
+    font-size: 9pt;
+    color: darkblue;
+    text-align: right;
+
+}
+
+.tab-details .old-address .address-item .action {
+    width: 5%;
+    height: 50%;
+    float: left;
+    background: rgba(255, 191, 200, 0.77)
+}
+
+.tab-details .old-address .address-item .action span {
+    margin: -10px auto 0 auto;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: relative;
+    top: 50%;
+    cursor: pointer;
+}
+
+.tab-details .old-address .address-item .action.edit {
+    background: rgba(207, 226, 255, 0.77);
+}
+
+.newaddress {
+    display: none;
+    width: 100%;
+    height: 500px;
+    box-shadow: 0 0 3px #aaa;
+    border-radius: 4px;
+    overflow: hidden;
+    float: right;
+    margin: 20px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.newaddress > div {
+    position: relative;
+    top: 5%;
+    width: 100%;
+}
+
+.newaddress > div div {
+    width: 50%;
+    float: right;
+}
+
+.newaddress label {
+    width: 90%;
+    height: 35px;
+    font-size: 10pt;
+    display: inline-block;
+    line-height: 36px;
+    text-align: right;
+}
+
+.newaddress .address {
+    width: 95%;
+}
+
+.newaddress input {
+    width: 90%;
+    display: inline-block;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: IRANYekan;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    color: #000;
+
+}
+
+.newaddress select {
+    width: 94%;
+    display: inline-block;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: IRANYekan;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.newaddress textarea {
+    width: 93%;
+    display: inline-block;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: IRANYekan;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.newaddress .black-btn {
+    width: 30%;
+    margin: 0 35%;
+}
+
+.tab-details > .black-btn {
+    color: #000;
+    background: #fff;
+    width: 36%;
+    margin: 20px 32%;
+}
+
+.tab-details .cart {
+    width: 100%;
+    float: right;
+    margin: 30px 0;
+}
+.tab-details .cart ul {
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+    float: right;
+}
+
+.tab-details .cart .item-cart {
+    width: 100%;
+    float: right;
+    box-shadow: 0 0 3px #aaa;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 4px;
+    height: auto;
+    overflow: hidden;
+}
+
+.cart .item-cart:last-child {
+
+    margin-bottom: 0;
+
+}
+
+.cart .item-cart:hover {
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.cart .item-cart > table {
+    width: 100%;
+    float: right;
+    height: 90px;
+    text-align: center;
+}
+
+.cart .item-cart > table .row1 {
+    height: 45%;
+    font-weight: 500;
+    font-size: 8pt;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.cart .item-cart > table .row1 td {
+    border-bottom: 1px dashed #aaa;
+}
+
+.cart .item-cart > table .row2 {
+    height: 55%;
+    font-weight: bolder;
+    font-size: 9pt;
+}
+
+.cart .item-cart > table .col1 {
+    width: 20%;
+}
+
+.cart .item-cart > table .col2 {
+    width: 15%;
+}
+
+.cart .item-cart > table .col3 {
+    width: 10%;
+}
+
+.cart .item-cart > table .col4 {
+    width: 20%;
+}
+
+.cart .item-cart > table .col5 {
+    width: 15%;
+}
+
+.cart .item-cart > table .col6 {
+    width: 20%;
+    position: relative;
+}
+
+.tab-details .cart .item-cart button {
+    width: 70%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.68);
+    color: #fff;
+    border: none;
+    font-size: 8pt;
+}
+
+.tab-details .cart .item-cart .cart-abstract-btn {
+    display: none;
+}
+
+.tab-details .cart .item-cart .cart-detail {
+    width: 96%;
+    margin: 0 2%;
+    background: #fff;
+    float: right;
+    border-top: 1px dotted #ccc;
+    display: none;
+}
+
+.cart-detail > table {
+    float: right;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 0 3px #aaa;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cart-detail > table img {
+    width: 80%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.cart-detail > table .row1 {
+    width: 100%;
+    height: 35px;
+    font-size: 8pt;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.cart-detail > table .row2 td {
+    border-bottom: 1px dashed #ccc;
+}
+
+.cart-detail > table .row2:last-child td {
+    border-bottom: none;
+}
+
+.cart-detail > table .row2 {
+    width: 100%;
+    /*height: 80px;*/
+    font-weight: bolder;
+    font-size: 9pt;
+}
+
+.cart-detail > table .col1 {
+    width: 15%;
+}
+
+.cart-detail > table .col2 {
+    width: 20%;
+}
+
+.cart-detail > table .col3 {
+    width: 25%;
+}
+
+.cart-detail > table .col4 {
+    width: 10%;
+}
+
+.cart-detail > table .col5 {
+    width: 10%;
+}
+
+.cart-detail > table .col6 {
+    width: 20%;
+}
+
+.cart-detail h3 {
+    text-align: center;
+    font-size: 10.5pt;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 850px){
+    .tab-details .cart ul li label {
+
+        line-height: 40px;
+        width: 35%;
+
+    }
+
+    .tab-details .cart ul li p {
+        line-height: 40px;
+        width: 59%;
+    }
+
+    .tab-details .cart ul li input {
+        line-height: 40px;
+        width: 59%;
+    }
+}
+@media screen and (max-width: 680px){
+    .tab-details .cart .item-cart button {
+        width: 80%;
+
+    }
+    .tab-details .cart ul li label {
+
+        line-height: 40px;
+        font-size: 8pt;
+
+    }
+
+    .tab-details .cart ul li p {
+        line-height: 40px;
+        font-size: 8pt;
+    }
+
+    .tab-details .cart ul li input {
+        line-height: 40px;
+        font-size: 8pt;
+    }
+}
+@media screen and (max-width: 580px){
+    .tab-details .cart .item-cart button {
+        width: 90%;
+        font-size: 7pt;
+
+    }
+
+    .cart .item-cart > table .row1 {
+        font-size: 7pt;
+
+    }
+
+    .cart .item-cart > table .row2 {
+        font-size: 8pt;
+    }
+    .tab-details .cart ul li label {
+
+        line-height: 40px;
+        width: 30%;
+        font-size: 7pt;
+
+    }
+
+    .tab-details .cart ul li p {
+        line-height: 40px;
+        width: 64%;
+        font-size: 7pt;
+    }
+
+    .tab-details .cart ul li input {
+        line-height: 40px;
+        width: 64%;
+        font-size: 7pt;
+    }
+
+    .cart-detail > table img {
+        width: 90%;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    .cart-detail > table .row1 {
+        width: 100%;
+        /*height: 35px;*/
+        font-size: 7.5pt;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .cart-detail > table .row2 {
+        width: 100%;
+
+        font-size: 8pt;
+    }
+
+    .tab-details .old-address .address-item .detail-address table .label {
+        font-size: 8pt;
+
+    }
+
+    .tab-details .old-address .address-item .detail-address table .value {
+        font-size: 8pt;
+
+    }
+
+    .tab-details .old-address .address-item .action span {
+        margin: -7px auto 0 auto;
+        width: 14px;
+        height: 14px;
+    }
+
+    .newaddress .black-btn {
+        width: 40%;
+        margin: 0 30%;
+    }
+
+    .tab-details > .black-btn {
+        width: 46%;
+        margin: 20px 27%;
+    }
+
+    .newaddress label {
+
+        font-size: 9pt;
+
+    }
+
+
+    .newaddress input {
+        font-size: 9pt;
+
+
+
+    }
+
+    .newaddress select {
+        font-size: 9pt;
+
+    }
+}
+@media screen and (max-width: 480px){
+    .tab-details .cart .item-cart button {
+        width: 95%;
+        font-size: 6pt;
+
+    }
+    .cart .item-cart > table .row1 {
+        font-size: 6pt;
+
+    }
+
+    .cart .item-cart > table .row2 {
+        font-size: 7pt;
+    }
+    .tab-details .cart ul li label {
+
+        line-height: 40px;
+        width: 26%;
+        font-size: 7pt;
+
+    }
+
+    .tab-details .cart ul li p {
+        line-height: 40px;
+        width: 68%;
+        font-size: 7pt;
+    }
+
+    .tab-details .cart ul li input {
+        line-height: 40px;
+        width: 68%;
+        font-size: 7pt;
+    }
+
+
+    .cart-detail > table .row1 {
+        width: 100%;
+        font-size: 7pt;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .cart-detail > table .row2 {
+        width: 100%;
+
+        font-size: 7pt;
+    }
+
+    .tab-details .old-address .address-item .detail-address table .label {
+        font-size: 6pt;
+
+    }
+
+    .tab-details .old-address .address-item .detail-address table .value {
+        font-size: 7pt;
+
+    }
+    .tab-details .old-address .address-item .action span {
+        margin: -6px auto 0 auto;
+        width: 12px;
+        height: 12px;
+    }
+}
+@media screen and (max-width: 380px){
+    .tab-details .cart .item-cart button {
+
+        font-size: 5.5pt;
+
+    }
+
+    .tab-details .old-address .address-item .detail-address table .label {
+        font-size: 5pt;
+
+    }
+
+    .tab-details .old-address .address-item .detail-address table .value {
+        font-size: 6.5pt;
+
+    }
+    .newaddress .black-btn {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .tab-details > .black-btn {
+        width: 60%;
+        margin: 20px 20%;
+    }
+    .newaddress label {
+        height: 35px;
+        font-size: 8pt;
+        width: 85%;
+
+
+    }
+
+
+    .newaddress input {
+        font-size: 8pt;
+        height: 35px;
+        width: 85%;
+
+
+    }
+
+    .newaddress select {
+        font-size: 8pt;
+        height: 40px;
+
+    }
+
+}
+@media screen and (max-width: 360px){
+    .tab-details .cart .item-cart button {
+
+        font-size: 5pt;
+        width: 98%;
+
+    }
+    .cart .item-cart > table .row1 {
+        font-size: 5pt;
+
+    }
+
+    .cart .item-cart > table .row2 {
+        font-size: 6pt;
+    }
+    .tab-details .cart ul li label {
+
+
+        font-size: 6pt;
+
+    }
+
+    .tab-details .cart ul li p {
+        line-height: 40px;
+
+        font-size: 6pt;
+    }
+
+    .tab-details .cart ul li input {
+        font-size: 6pt;
+    }
+    .cart-detail > table .row1 {
+        font-size: 6pt;
+
+    }
+
+    .cart-detail > table .row2 {
+
+        font-size: 6pt;
+    }
+    .tab-details .old-address .address-item .detail-address table .label {
+        font-size: 4.5pt;
+
+    }
+
+    .tab-details .old-address .address-item .detail-address table .value {
+        font-size: 6pt;
+
+    }
+    .tab-details .old-address .address-item .action span {
+        margin: -5px auto 0 auto;
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+
+/*-------------------------------------------------------------*/
+
+.dark-window {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 8;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+.pop-up-edit-address {
+    display: none;
+    width: 60%;
+    height: 80%;
+    position: fixed;
+    top: 10%;
+    right: 20%;
+    z-index: 9;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #fff;
+
+}
+
+.pop-up-remove-address {
+    display: none;
+    width: 280px;
+    height: 150px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    margin-top: -75px;
+    margin-right: -140px;
+    z-index: 9;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #fff;
+
+}
+
+.pop-up-remove-address p {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    line-height: 45px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.pop-up-remove-address span {
+    width: 38%;
+    height: 40px;
+    display: block;
+    margin: 6%;
+    float: right;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pop-up-edit-address .newaddress {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 1px #fff;
+    font-family: IRANYekan;
+    margin: 0;
+    box-shadow: none;
+
+}
+
+.pop-up-edit-address .newaddress > span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /*border: 1px solid #aaa;*/
+    box-shadow: 0 0 3px #aaa;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    z-index: 10;
+    background: #fff;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 1100px){
+    .pop-up-edit-address {
+        width: 80%;
+        right: 10%;
+    }
+}
+@media screen and (max-width: 850px){
+    .pop-up-edit-address {
+        width: 90%;
+        right: 5%;
+    }
+}
+@media screen and (max-width: 580px){
+    .pop-up-edit-address .newaddress > span {
+        width: 30px;
+        height: 30px;
+        left: -15px;
+        top: -15px;
+    }
+}
+@media screen and (max-width: 360px){
+    .pop-up-edit-address .newaddress > span {
+        left: -10px;
+
+
+    }
+}
+
+
+/*-------------------------------------------------------------*/
+
+
+
+

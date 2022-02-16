@@ -1,0 +1,442 @@
+h1{
+    font-size: 14pt;
+    text-align: center;
+}
+
+.login {
+    width: 39%;
+    height: 500px;
+    box-shadow: 0 0 3px #aaa;
+    border-radius: 4px;
+    overflow: hidden;
+    /*float: right;*/
+    margin: 0.5% auto;
+    text-align: center;
+    background: #fff;
+}
+
+.login > div {
+    position: relative;
+    top: 18%;
+    width: 100%;
+}
+
+.login label {
+    width: 80%;
+    height: 35px;
+    font-size: 10pt;
+    display: inline-block;
+    line-height: 36px;
+    text-align: right;
+}
+
+.login input {
+    width: 80%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: IRANYekan;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    color: #000;
+
+}
+.login input:hover {
+    border: 1px solid #aaa !important;
+
+}
+.register input:hover {
+    border: 1px solid #aaa !important;
+
+}
+
+.login a {
+    width: 80%;
+    height: 40px;
+    margin: 5px;
+    display: inline-block;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.71);
+    cursor: pointer;
+
+}
+
+.login a:hover {
+    color: rgba(0, 0, 0, 0.9)
+}
+.login input::placeholder {
+    color: #ccc;
+}
+.register input::placeholder {
+    color: #ccc;
+}
+
+
+.confirm-button {
+    width: 65% !important;
+    height: 44px !important;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.confirm-button.forget {
+    width: 65% !important;
+    height: 44px !important;
+    margin: 30px auto 10px auto;
+    display: inline-block;
+}
+
+.confirm-button > button {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 0 2px #aaa;
+    cursor: pointer;
+    font-size: 11pt;
+}
+
+.confirm-button > button:hover {
+    border: 1px solid #aaa;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 2px #aaa;
+}
+
+
+.login #register-show {
+    width: 65%;
+    height: 44px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 0 2px #aaa;
+    cursor: pointer;
+    font-size: 11pt;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    color: #000;
+}
+
+.login #register-show:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 4px #aaa;
+}
+
+.register {
+    display: none;
+    width: 59%;
+    height: 500px;
+    box-shadow: 0 0 3px #aaa;
+    border-radius: 4px;
+    overflow: hidden;
+    float: right;
+    margin: 0.5%;
+    text-align: center;
+    background: #fff;
+}
+.register > div {
+    position: relative;
+    top: 5%;
+    width: 100%;
+}
+.register > div div {
+    width: 50%;
+    float: right;
+}
+
+.register label {
+    width: 90%;
+    height: 35px;
+    font-size: 10pt;
+    display: inline-block;
+    line-height: 36px;
+    text-align: right;
+}
+
+.register input {
+    width: 90%;
+    display: inline-block;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: IRANYekan;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    color: #000;
+
+}
+.register .verify-section {
+    width: 100%;
+    display: none;
+    height: 100px;
+
+}
+.verify-section-login {
+    width: 100%;
+    display: none;
+    height: 100px;
+
+}
+.verify-code {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 14pt;
+
+}
+.register .checkbox-register{
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    display: block;
+    float: right;
+    margin-top: 13px;
+    margin-right: 10px;
+}
+.register > div .roles{
+    display: block;
+    float: right;
+}
+
+@media screen and (max-width: 850px){
+    #main{
+
+        height: auto;
+    }
+    .login{
+        width: 60%;
+    }
+    .register{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px){
+    .login{
+        width: 80%;
+    }
+    .register{
+        width: 98%;
+    }
+}
+@media screen and (max-width: 480px){
+    .login{
+        width: 95%;
+
+    }
+    .login > div {
+        top: 15%;
+
+    }
+
+    .register{
+        height: 800px;
+    }
+    .register > div div {
+        width: 98%;
+        float: right;
+    }
+}
+@media screen and (max-width: 440px){
+    .register .checkbox-register{
+        width: 15px;
+        height: 15px;
+
+    }
+    .register > div .roles{
+        font-size: 8pt;
+        line-height: 18px;
+    }
+}
+@media screen and (max-width: 360px){
+
+    .register > div .roles{
+        font-size: 7pt;
+        line-height: 24px;
+    }
+}
+
+
+#main {
+
+    max-width: 1100px;
+    margin: 30px auto 60px auto;
+    position: relative;
+    z-index: 0;
+
+}
+
+.nav-buy {
+    max-width: 1100px;
+    height: 80px;
+    margin: 8px auto 0 auto;
+    box-shadow: 0 0 2px #aaa;
+    position: relative;
+    background: #fff;
+    top: 0;
+    display: block;
+    z-index: 1;
+}
+
+.progress-nav {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.progress-nav ul {
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    float: right;
+}
+
+.progress-nav ul li {
+    width: 25%;
+    height: 36%;
+    margin: 15px 0 0 0;
+    padding: 0;
+    float: right;
+}
+
+.progress-nav ul li > p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+    text-align: center;
+    line-height: 15px;
+    font-size: 8pt;
+    color: #aaa;
+}
+
+.progress-nav ul li > p.ready {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.progress-nav ul li > p.active {
+    color: darkblue;
+}
+
+.progress-nav ul li .line {
+    width: 40%;
+    height: 1px;
+    border-bottom: 1px solid #aaa;
+    display: block;
+    float: right;
+    margin-top: 12px;
+}
+
+.progress-nav ul li .contain-circle {
+    width: 20%;
+    height: 25px;
+    float: right;
+}
+
+.progress-nav ul li .circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    display: block;
+    margin: auto;
+}
+
+.progress-nav ul li .circle.ready {
+
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.progress-nav ul li .circle.active {
+
+    border: 1px solid darkblue;
+    background-color: darkblue;
+}
+
+@media screen and (max-width: 1100px) {
+    .nav-buy {
+        width: 98%;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .nav-buy {
+        margin: 8px auto 0 auto;
+        top: -42px;
+    }
+    .progress-nav {
+        margin-top: 54px;
+    }
+    #main {
+        margin: 0 auto 60px auto;
+        top: -24px;
+    }
+    h1{
+        text-align: center;
+        font-size: 13pt !important;
+    }
+    .progress-nav ul {
+        position: relative;
+        top: -10px;
+    }
+    .progress-nav ul li .circle {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .progress-nav ul li .line {
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .progress-nav{
+        width: 95%;
+    }
+    .progress-nav ul li .contain-circle {
+        width: 30%;
+    }
+    .progress-nav ul li .line {
+        width: 35%;
+    }
+    .progress-nav ul li p {
+        font-size: 7pt;
+        line-height: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .progress-nav ul li .contain-circle {
+        width: 34%;
+    }
+    .progress-nav ul li .line {
+        width: 33%;
+    }
+    .progress-nav ul li p {
+        font-size: 6.5pt;
+        line-height: 3px;
+    }
+}
+
+
+
+@media screen and (max-width: 370px) {
+    .progress-nav ul li p {
+        font-size: 6pt;
+        line-height: 3px;
+    }
+}
